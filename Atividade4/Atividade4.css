@@ -1,0 +1,86 @@
+body {
+    background: #9FE2BF url(frutas.jpg);
+      background-repeat: no-repeat;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+  sans-serif;
+  line-height: 1.5;
+  
+  }
+  
+  
+  .container {
+  margin: 0 auto;
+  width: 960px;
+  }
+  
+  article {
+  background-color: #9FE2BF;
+  border: 1px solid #CCC;
+  border-color: #CCC #999 #999 #CCC;
+  margin-bottom: 20px;
+  padding: 10px; 
+  }
+  
+  
+  article h2 {
+  border-bottom: 1px dashed #7E9F19;
+  margin: 0;
+  }
+  
+  article img {
+  border: 1px solid #7E9F19;
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 2px;
+  width: 160px;
+  height: 160px;
+  }
+  
+  article a { 
+  color: #2C88A7;
+  font-weight: bold;
+  }
+  
+  header h1 a {
+  color: #344118;
+  text-decoration: none;
+  margin-left:350px;
+  }
+  
+  header h1 a:hover { 
+  background-color: #7E9F19;
+  color: #FFF;
+  }
+  
+  .clear { 
+  clear: both;
+  }
+  
+  footer {
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  }
+  
+  section { 
+  float: left;
+  width: 660px;
+  }
+  
+  aside {
+  background-color: #9FE2BF;
+  border: 1px solid #C9BC8F;
+  padding: 10px;
+  float: right;
+  width: 260px;
+  }
+  
+  aside h3 {
+  font-size: 14px;
+  margin-top: 0;
+  }
+  
+  aside ol {
+  font-size: 14px;
+  }
+  
