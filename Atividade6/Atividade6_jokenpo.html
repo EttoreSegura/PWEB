@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 6 - Jokenpo</title>
+
+    <script>
+          var user,num1, num2, pc;
+          num = prompt("Insira sua escolha (1-pedra, 2-tesoura ou 3-papel): ");
+          num2 = Math.random();
+          
+          if(num=="1")
+          {
+            user="pedra";
+
+          }
+          else
+            if(num=="2"){
+                user="tesoura";
+            }
+            else{
+                user="papel";
+            }
+          
+          if(num2<0.33)
+          {
+            pc="pedra";
+
+          }
+          else
+            if(num2>0.66){
+                pc="tesoura";
+            }
+            else{
+                pc="papel";
+            }
+
+          if(user==pc)
+          {
+            alert("Sua escolha: "+user+" X Pc: "+pc);
+            alert("Empate")
+          }   
+          else
+            if(user =="pedra"&& pc == "tesoura"||user =="papel"&& pc == "pedra"||user =="tesoura"&& pc == "papel"){
+                alert("Sua escolha: "+user+" X Pc: "+pc);
+                alert("Você ganhou!")
+            }
+            else
+                {
+                    alert("Sua escolha: "+user+" X Pc: "+pc);
+                    alert("Você perdeu! ");
+                }
+
+
+
+       
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
