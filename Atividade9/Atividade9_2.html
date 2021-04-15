@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9 - 2</title>
+
+    <script>
+        function Conta (){
+            var nome;
+            var banco;
+            var numero;
+            var saldo;    
+            //set
+            this.setConta = function(N,B,Num,S,){
+                this.nome=N;
+                this.banco=B;
+                this.numero=Num;
+                this.saldo=S;
+            };
+            //get
+            this.getNome = function(){
+                return this.nome;
+            };
+            this.getBanco = function(){
+                return this.banco;
+            };
+            this.getNumero = function(){
+                return this.numero;
+            };
+            this.getSaldo = function(){
+                return this.saldo;
+            };
+        }
+
+        function Corrente(){
+            var saldoEspec;
+            
+            this.setSaldoEsp = function(salEs){
+                this.saldoEspec=salEs;
+            };
+            this.getSaldoEsp = function(){
+                return this.saldoEspec;
+            };
+        }
+        function Poupanca(){
+            var juros, dataVenc;
+
+            this.setPoupanca= function(j,dt){
+                this.juros=j;
+                this.dataVenc=dt;
+            };
+            this.getJuros= function(){
+                return this.juros;
+            };
+            this.getDtVenc= function(){
+                return this.dataVenc;
+            };
+        }
+        //herança
+        Corrente.prototype= new Conta();
+        Poupanca.prototype= new Conta();
+
+        //criando objetos
+        objCorrente = new Corrente();
+        objPoupanca = new Poupanca();
+
+        objCorrente.setConta("Ettore",2,123,1000);
+        objCorrente.setSaldoEsp(500);
+
+        objPoupanca.setConta("Ettore",2,123,1000);
+        objPoupanca.setPoupanca("5%","15/02/2022");
+
+        alert("Conta: "+objCorrente.getNome()+"  Banco: "+objCorrente.getBanco()+" Numero: "+objCorrente.getNumero()+" Saldo: "+objCorrente.getSaldo()+"\n"+
+        "Corrente: Saldo Especial-"+objCorrente.getSaldoEsp()+"\n"+"Poupança: Juros-"+objPoupanca.getJuros()+" Data Vencimento-"+objPoupanca.getDtVenc());
+    
+        
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
