@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9 - 1</title>
+
+    <script>
+        function Retangulo (x,y){
+            this.x=x;
+            this.y=y;
+            var area= x*y;
+            this.getArea = function(){
+            return area;
+            };
+        }
+        var ret = new Retangulo(2,4);
+        alert("Area: "+ret.getArea());
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
