@@ -1,0 +1,148 @@
+body {
+	font: 150% 'Trebuchet MS',Arial, Helvetica, sans-serif;
+    background-color: rgb(105, 143, 248);
+}
+
+
+
+h1 {
+	font: bold 100% 'Trebuchet MS',Arial, Helvetica, sans-serif;
+}
+h2
+{
+	font-size: 120%;
+}
+
+
+#pagina {
+	padding: 5px;
+	width: 960px; 
+	margin: 20px auto;
+}
+
+#cabecalho {
+    position: fixed;
+    width: 960px;
+    height: 40px;
+    border: solid 1px rgb(0,0,0);
+    background-color: #f8f8f8;
+    
+}
+#inicio a{
+    float:left;
+    text-align: center;
+    font-size: 95%;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 15px;
+    color: rgb(47, 120, 189);
+}
+#cabecalho ul {
+    font-size: 75%;         
+}
+#cabecalho ul a{ 
+    float:right;
+    text-align: center;
+    width: 125px;
+    color: rgb(47, 120, 189);
+    text-decoration: none;
+    line-height: 15px;
+}
+
+
+#conteudo {
+	width: 750px;
+	margin: 45px auto;
+    background: #f8f8f8;
+    float: left;   
+}
+
+#conteudo img
+{
+	width:30%;
+	height:30%;
+	float: left;
+    margin-right: 15px;
+    border: solid 1px rgb(0, 0, 0)	
+}
+#conteudo a{
+    color: rgb(47, 120, 189);
+    text-decoration: none;
+}
+
+#habilidades {
+    width: 900px;
+	float: left;
+    background: #fcf9f9;
+    text-align: left;
+}
+
+#rodape {
+    margin-left: 15px;
+    clear: both;
+    font-size: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cabecalho, #conteudo, #habilidades {
+	margin-bottom: 5px;
+    background-color: rgb(168, 186, 235);
+}
+
+	
+ #cabecalho, #conteudo, #habilidades {
+	border: solid 1px rgb(29, 24, 24);
+}
+
+
+@media screen and (max-width: 980px) {
+	
+	#pagina {
+		width: 94%;
+	}
+    #cabecalho {
+		position:static;
+        width: 94%;
+	}
+	#conteudo {
+		width: 65%;
+	}
+	#habilidades {
+		width: 30%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	#conteudo {
+		width: auto;
+		
+	}
+    #cabecalho{
+        width: 90%;
+    }
+	#habilidades {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+	#cabecalho {
+		display: none;  
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#habilidades { 
+		width: auto;
+		float: none;
+	}
+
+}
