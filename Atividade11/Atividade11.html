@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 11</title>
+    <script>
+       
+
+        function trocaFormatacao() {
+            
+            
+            if (document.getElementById("idradio1").checked == true ) {
+                document.getElementById("idTexto").innerHTML =  document.getElementById("idTexto").innerText.toUppercase();
+                
+            };
+
+            
+            if (document.getElementById("idradio2").checked == true ) {
+                document.getElementById("idTexto").innerHTML  =  document.getElementById("idTexto").innerText.toLowercase();
+                
+            };
+  
+           
+        }
+    </script>
+
+
+</head>
+
+<body>
+    
+
+    <div id="principal" width=200 heigth=200 align=center>
+            Texto:
+            <input name="idTexto" type="text" id="idTexto" size="52" maxlength="150">
+            <br>
+            <br> Maiusculo :
+            <input name="idradio" type="radio"  id="idradio1" >
+            <br>
+            <br> Minusculo :
+            <input name="idradio" type="radio" id="idradio2" >
+            <br>
+            <br><input name="idbutton" type="button" id="idbutton" value="Testar" onclick="trocaFormatacao();">
+            <br>
+            
+    </div>
+    
+</body>
+
+</html>
